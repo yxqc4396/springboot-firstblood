@@ -1,6 +1,6 @@
-package com.example.interfaces;
+package com.example.interfaces.login;
 
-import com.example.entiey.Login;
+import com.example.entiey.login.Login;
 
 import java.util.List;
 

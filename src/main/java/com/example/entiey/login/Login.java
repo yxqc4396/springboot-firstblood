@@ -1,4 +1,4 @@
-package com.example.entiey;
+package com.example.entiey.login;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

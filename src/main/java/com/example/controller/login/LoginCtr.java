@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.controller.login;
 
-import com.example.entiey.Login;
-import com.example.interfaces.LoignService;
+import com.example.entiey.login.Login;
+import com.example.interfaces.login.LoignService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

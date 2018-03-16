@@ -1,7 +1,7 @@
-package com.example.interfaces.impl;
+package com.example.interfaces.impl.login;
 
-import com.example.entiey.Login;
-import com.example.interfaces.LoignService;
+import com.example.entiey.login.Login;
+import com.example.interfaces.login.LoignService;
 import com.example.util.BaseDataAccess;
 import org.springframework.stereotype.Service;
 
