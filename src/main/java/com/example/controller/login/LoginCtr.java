@@ -61,9 +61,10 @@ public class LoginCtr {
             response.addCookie(cookie);
             status = "success";
         } else
-        if (list.size() == 0){
+        if(list.size() == 0){
             status = "输入账户有误";
-        } else if(list.size() >= 1) {
+        } else
+        if(list.size() >= 1) {
             logger.info("登陆用户ID重复");
         }
         response.setCharacterEncoding("UTF-8");
