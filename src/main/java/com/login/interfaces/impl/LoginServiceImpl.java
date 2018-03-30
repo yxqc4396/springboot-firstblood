@@ -2,8 +2,8 @@ package com.login.interfaces.impl;
 
 import com.login.entiey.User;
 import com.login.interfaces.LoignService;
-import com.login.util.BaseDataAccess;
-import com.login.util.Md5Util;
+import com.util.BaseDataAccess;
+import com.util.Md5Util;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -40,5 +40,10 @@ public class LoginServiceImpl extends BaseDataAccess implements LoignService{
         String userpwd = Md5Util.MD5toMD5(jmOne);      // 密码二次加密
         String sql = "insert into User (username, userpwd) values ('"+user1.getUsername()+"', '"+userpwd+"')";
         transactionYes(sql);
+    }
+
+    @Override
+    public void addSessionid(String sesionid, User user) {
+        String sql = "update User set sessionid = '"+sesionid+"' where username = '"+user.getUsername()+"'";
     }
 }

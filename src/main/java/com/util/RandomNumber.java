@@ -1,4 +1,4 @@
-package com.login.util;
+package com.util;
 
 public class RandomNumber {
     /**
@@ -8,7 +8,7 @@ public class RandomNumber {
      */
     public static String createRandomNum(int num){
         String randomNumStr = "";
-        for(int i = 0; i < num; i++){
+        for (int i = 0; i < num; i++) {
             int randomNum = (int)(Math.random() * 10);
             randomNumStr += randomNum;
         }

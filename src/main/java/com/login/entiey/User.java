@@ -20,6 +20,8 @@ public class User {
     private String mailbox;
     // 手机号
     private String phonenum;
+    // sessionid 用于拦截业务
+    private String sessionid;
 
     public Integer getLoginid() {
         return loginid;
@@ -59,5 +61,13 @@ public class User {
 
     public void setPhonenum(String phonenum) {
         this.phonenum = phonenum;
+    }
+
+    public String getSessionid() {
+        return sessionid;
+    }
+
+    public void setSessionid(String sessionid) {
+        this.sessionid = sessionid;
     }
 }

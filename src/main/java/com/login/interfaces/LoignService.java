@@ -12,4 +12,6 @@ public interface LoignService {
     List findByName(String name);
 
     void saveUser(User user1);
+
+    void addSessionid(String sesionid, User user);
 }

@@ -363,7 +363,7 @@
                                 </li>
                                 <li ui-sref-active="active">
                                     <a ui-sref="app.dashboard-v1">
-                                        <span>Dashboard v1</span>
+                                        <span onclick="aaaa()">Dashboard v1</span>
                                     </a>
                                 </li>
                                 <li ui-sref-active="active">
@@ -1132,7 +1132,9 @@
         });
     }(jQuery);
     /* 原始代码(不用动) End*/
-
+    function aaaa() {
+        alert(111);
+    }
 </script>
 </body>
 </html>

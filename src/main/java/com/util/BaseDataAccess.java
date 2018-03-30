@@ -1,4 +1,4 @@
-package com.login.util;
+package com.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +30,7 @@ public class BaseDataAccess {
         try {
             list = query.getResultList();
         } catch (Exception e) {
-            logger.info("访问数据库异常："+e.getMessage());
+            logger.info("【访问数据库异常】："+e.getMessage());
         }
         // 关闭
         em.close();
@@ -54,7 +54,7 @@ public class BaseDataAccess {
         try {
             query.executeUpdate();
         } catch (Exception e) {
-            logger.info("访问数据库异常："+e.getMessage());
+            logger.info("【访问数据库异常】："+e.getMessage());
         }
         // 提交事物
         transaction.commit();

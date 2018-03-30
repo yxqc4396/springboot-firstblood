@@ -1,4 +1,4 @@
-package com.login.util;
+package com.util;
 
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
@@ -23,7 +23,7 @@ public class Test {
         paramMap.put("jsonContent", jsonContent);
         System.out.print("短信接口请求参数:{'phoneNumber':'"+paramMap.get("phoneNumber")+"','msgSign':'"+paramMap.get("msgSign")+"','templateCode':'"+paramMap.get("templateCode")+"','jsonContent':'"+paramMap.get("jsonContent")+"'}");
         SendSmsResponse sendSmsResponse = AliyunMessageUtil.sendSms(paramMap);
-        if(sendSmsResponse.getCode() != null && sendSmsResponse.getCode().equals("OK")) {
+        if (sendSmsResponse.getCode() != null && sendSmsResponse.getCode().equals("OK")) {
 
             System.out.println("短信接口返回参数:{'requestId':'"+sendSmsResponse.getRequestId()+"','code':'"+sendSmsResponse.getCode()+"','message':'"+sendSmsResponse.getMessage()+"','bizId':'"+sendSmsResponse.getBizId()+"'}");
         } else {

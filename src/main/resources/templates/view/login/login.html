@@ -15,7 +15,7 @@
 </body>
     <script>
         $(function() {
-            cookieLogin();
+            /*cookieLogin();*/
         })
 
         /**
@@ -30,7 +30,7 @@
                 type:"post",
                 data:{"username":username,"userpwd":userpwd,"checked":checked},
                 success:function(message) {
-                    if(message == "success") {
+                    if (message == "success") {
                         location.href = "/loginCtr/welcome";
                     } else {
                         alert(message);
@@ -47,7 +47,7 @@
                 url:"/loginCtr/cookisLogin",
                 type:"post",
                 success:function(message) {
-                    if(message == "success") {
+                    if (message == "success") {
                         location.href = "/loginCtr/welcome";
                     }
                 }

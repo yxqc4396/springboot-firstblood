@@ -1,4 +1,4 @@
-package com.login.util;
+package com.util;
 
 import java.security.MessageDigest;
 
@@ -73,10 +73,11 @@ public class Md5Util {
      */
     public static void main(String[] args) {
         System.out.println();
-        String s = new String("网");
+        String s = new String("111");
         System.out.println("原始：" + s);
         System.out.println("MD5后：" + MD5(s));
         System.out.println("MD5后再加密：" + MD5toMD5(MD5(s)));
         System.out.println("解密为MD5后的：" + JM(MD5toMD5(MD5(s))));
+        // BMLAEEMLEFEALE@MMCCDEBBL
     }
 }
